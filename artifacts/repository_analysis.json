@@ -1,0 +1,4577 @@
+{
+  "metadata": {
+    "repository_name": "requests",
+    "repository_path": "artifacts/repositories/requests",
+    "total_files": 103,
+    "python_files": 37
+  },
+  "relevant_files": [
+    "artifacts/repositories/requests/.github/AI_POLICY.md",
+    "artifacts/repositories/requests/.github/CODE_OF_CONDUCT.md",
+    "artifacts/repositories/requests/.github/CONTRIBUTING.md",
+    "artifacts/repositories/requests/.github/FUNDING.yml",
+    "artifacts/repositories/requests/.github/ISSUE_TEMPLATE/Bug_report.md",
+    "artifacts/repositories/requests/.github/ISSUE_TEMPLATE/Custom.md",
+    "artifacts/repositories/requests/.github/ISSUE_TEMPLATE/Feature_request.md",
+    "artifacts/repositories/requests/.github/ISSUE_TEMPLATE.md",
+    "artifacts/repositories/requests/.github/SECURITY.md",
+    "artifacts/repositories/requests/.github/dependabot.yml",
+    "artifacts/repositories/requests/.github/workflows/close-issues.yml",
+    "artifacts/repositories/requests/.github/workflows/codeql-analysis.yml",
+    "artifacts/repositories/requests/.github/workflows/lint.yml",
+    "artifacts/repositories/requests/.github/workflows/lock-issues.yml",
+    "artifacts/repositories/requests/.github/workflows/publish.yml",
+    "artifacts/repositories/requests/.github/workflows/run-tests.yml",
+    "artifacts/repositories/requests/.github/workflows/typecheck.yml",
+    "artifacts/repositories/requests/.github/workflows/zizmor.yml",
+    "artifacts/repositories/requests/.pre-commit-config.yaml",
+    "artifacts/repositories/requests/.readthedocs.yaml",
+    "artifacts/repositories/requests/HISTORY.md",
+    "artifacts/repositories/requests/README.md",
+    "artifacts/repositories/requests/docs/_themes/flask_theme_support.py",
+    "artifacts/repositories/requests/docs/conf.py",
+    "artifacts/repositories/requests/docs/requirements.txt",
+    "artifacts/repositories/requests/pyproject.toml",
+    "artifacts/repositories/requests/requirements-dev.txt",
+    "artifacts/repositories/requests/setup.py",
+    "artifacts/repositories/requests/src/requests/__init__.py",
+    "artifacts/repositories/requests/src/requests/__version__.py",
+    "artifacts/repositories/requests/src/requests/_internal_utils.py",
+    "artifacts/repositories/requests/src/requests/_types.py",
+    "artifacts/repositories/requests/src/requests/adapters.py",
+    "artifacts/repositories/requests/src/requests/api.py",
+    "artifacts/repositories/requests/src/requests/auth.py",
+    "artifacts/repositories/requests/src/requests/certs.py",
+    "artifacts/repositories/requests/src/requests/compat.py",
+    "artifacts/repositories/requests/src/requests/cookies.py",
+    "artifacts/repositories/requests/src/requests/exceptions.py",
+    "artifacts/repositories/requests/src/requests/help.py",
+    "artifacts/repositories/requests/src/requests/hooks.py",
+    "artifacts/repositories/requests/src/requests/models.py",
+    "artifacts/repositories/requests/src/requests/packages.py",
+    "artifacts/repositories/requests/src/requests/sessions.py",
+    "artifacts/repositories/requests/src/requests/status_codes.py",
+    "artifacts/repositories/requests/src/requests/structures.py",
+    "artifacts/repositories/requests/src/requests/utils.py",
+    "artifacts/repositories/requests/tests/__init__.py",
+    "artifacts/repositories/requests/tests/compat.py",
+    "artifacts/repositories/requests/tests/conftest.py",
+    "artifacts/repositories/requests/tests/test_adapters.py",
+    "artifacts/repositories/requests/tests/test_help.py",
+    "artifacts/repositories/requests/tests/test_hooks.py",
+    "artifacts/repositories/requests/tests/test_lowlevel.py",
+    "artifacts/repositories/requests/tests/test_packages.py",
+    "artifacts/repositories/requests/tests/test_requests.py",
+    "artifacts/repositories/requests/tests/test_structures.py",
+    "artifacts/repositories/requests/tests/test_testserver.py",
+    "artifacts/repositories/requests/tests/test_utils.py",
+    "artifacts/repositories/requests/tests/testserver/__init__.py",
+    "artifacts/repositories/requests/tests/testserver/server.py",
+    "artifacts/repositories/requests/tests/utils.py",
+    "artifacts/repositories/requests/tox.ini"
+  ],
+  "file_tree": {
+    "requests": {
+      ".github": {
+        "ISSUE_TEMPLATE": {
+          "Bug_report.md": null,
+          "Custom.md": null,
+          "Feature_request.md": null
+        },
+        "workflows": {
+          "close-issues.yml": null,
+          "codeql-analysis.yml": null,
+          "lint.yml": null,
+          "lock-issues.yml": null,
+          "publish.yml": null,
+          "run-tests.yml": null,
+          "typecheck.yml": null,
+          "zizmor.yml": null
+        },
+        "AI_POLICY.md": null,
+        "CODE_OF_CONDUCT.md": null,
+        "CODEOWNERS": null,
+        "CONTRIBUTING.md": null,
+        "dependabot.yml": null,
+        "FUNDING.yml": null,
+        "ISSUE_TEMPLATE.md": null,
+        "SECURITY.md": null
+      },
+      "docs": {
+        "_static": {
+          "custom.css": null,
+          "requests-sidebar.png": null
+        },
+        "_templates": {
+          "sidebar.html": null
+        },
+        "_themes": {
+          ".gitignore": null,
+          "flask_theme_support.py": null,
+          "LICENSE": null
+        },
+        "community": {
+          "faq.rst": null,
+          "out-there.rst": null,
+          "recommended.rst": null,
+          "release-process.rst": null,
+          "support.rst": null,
+          "updates.rst": null,
+          "vulnerabilities.rst": null
+        },
+        "dev": {
+          "authors.rst": null,
+          "contributing.rst": null
+        },
+        "user": {
+          "advanced.rst": null,
+          "authentication.rst": null,
+          "install.rst": null,
+          "quickstart.rst": null
+        },
+        ".nojekyll": null,
+        "api.rst": null,
+        "conf.py": null,
+        "index.rst": null,
+        "make.bat": null,
+        "Makefile": null,
+        "requirements.txt": null
+      },
+      "ext": {
+        "kr.png": null,
+        "LICENSE": null,
+        "psf.png": null,
+        "requests-logo-compressed.png": null,
+        "requests-logo.ai": null,
+        "requests-logo.png": null,
+        "requests-logo.svg": null
+      },
+      "src": {
+        "requests": {
+          "__init__.py": null,
+          "__version__.py": null,
+          "_internal_utils.py": null,
+          "_types.py": null,
+          "adapters.py": null,
+          "api.py": null,
+          "auth.py": null,
+          "certs.py": null,
+          "compat.py": null,
+          "cookies.py": null,
+          "exceptions.py": null,
+          "help.py": null,
+          "hooks.py": null,
+          "models.py": null,
+          "packages.py": null,
+          "py.typed": null,
+          "sessions.py": null,
+          "status_codes.py": null,
+          "structures.py": null,
+          "utils.py": null
+        }
+      },
+      "tests": {
+        "testserver": {
+          "__init__.py": null,
+          "server.py": null
+        },
+        "__init__.py": null,
+        "compat.py": null,
+        "conftest.py": null,
+        "test_adapters.py": null,
+        "test_help.py": null,
+        "test_hooks.py": null,
+        "test_lowlevel.py": null,
+        "test_packages.py": null,
+        "test_requests.py": null,
+        "test_structures.py": null,
+        "test_testserver.py": null,
+        "test_utils.py": null,
+        "utils.py": null
+      },
+      ".coveragerc": null,
+      ".git-blame-ignore-revs": null,
+      ".gitignore": null,
+      ".pre-commit-config.yaml": null,
+      ".readthedocs.yaml": null,
+      "AUTHORS.rst": null,
+      "HISTORY.md": null,
+      "LICENSE": null,
+      "Makefile": null,
+      "MANIFEST.in": null,
+      "NOTICE": null,
+      "pyproject.toml": null,
+      "README.md": null,
+      "requirements-dev.txt": null,
+      "setup.py": null,
+      "tox.ini": null
+    }
+  },
+  "python_structure": [
+    {
+      "file": "artifacts/repositories/requests/docs/_themes/flask_theme_support.py",
+      "imports": [
+        "pygments.style",
+        "pygments.token"
+      ],
+      "functions": [],
+      "classes": [
+        "FlaskyStyle"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/docs/conf.py",
+      "imports": [
+        "os",
+        "requests",
+        "sys"
+      ],
+      "functions": [],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/setup.py",
+      "imports": [
+        "setuptools",
+        "sys"
+      ],
+      "functions": [],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/__init__.py",
+      "imports": [
+        "__future__",
+        "__version__",
+        "api",
+        "chardet",
+        "charset_normalizer",
+        "cryptography",
+        "exceptions",
+        "logging",
+        "models",
+        "sessions",
+        "ssl",
+        "status_codes",
+        "urllib3",
+        "urllib3.contrib",
+        "urllib3.exceptions",
+        "warnings"
+      ],
+      "functions": [
+        "_check_cryptography",
+        "check_compatibility"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/__version__.py",
+      "imports": [],
+      "functions": [],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/_internal_utils.py",
+      "imports": [
+        "compat",
+        "re"
+      ],
+      "functions": [
+        "to_native_string",
+        "unicode_is_ascii"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/_types.py",
+      "imports": [
+        "__future__",
+        "auth",
+        "collections.abc",
+        "cookies",
+        "http.cookiejar",
+        "models",
+        "structures",
+        "typing",
+        "typing_extensions"
+      ],
+      "functions": [
+        "has_read",
+        "is_prepared",
+        "items",
+        "read"
+      ],
+      "classes": [
+        "BaseRequestKwargs",
+        "DataKwargs",
+        "GetKwargs",
+        "PostKwargs",
+        "RequestKwargs",
+        "SupportsItems",
+        "SupportsRead",
+        "_ValidatedRequest"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/adapters.py",
+      "imports": [
+        "__future__",
+        "_types",
+        "auth",
+        "compat",
+        "cookies",
+        "exceptions",
+        "models",
+        "os.path",
+        "socket",
+        "structures",
+        "typing",
+        "urllib3.connectionpool",
+        "urllib3.contrib.socks",
+        "urllib3.exceptions",
+        "urllib3.poolmanager",
+        "urllib3.util",
+        "urllib3.util.retry",
+        "utils",
+        "warnings"
+      ],
+      "functions": [
+        "SOCKSProxyManager",
+        "__getstate__",
+        "__init__",
+        "__setstate__",
+        "_urllib3_request_context",
+        "add_headers",
+        "build_connection_pool_key_attributes",
+        "build_response",
+        "cert_verify",
+        "close",
+        "get_connection",
+        "get_connection_with_tls_context",
+        "init_poolmanager",
+        "proxy_headers",
+        "proxy_manager_for",
+        "request_url",
+        "send"
+      ],
+      "classes": [
+        "BaseAdapter",
+        "HTTPAdapter"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/api.py",
+      "imports": [
+        "__future__",
+        "models",
+        "typing",
+        "typing_extensions"
+      ],
+      "functions": [
+        "delete",
+        "get",
+        "head",
+        "options",
+        "patch",
+        "post",
+        "put",
+        "request"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/auth.py",
+      "imports": [
+        "__future__",
+        "_internal_utils",
+        "base64",
+        "compat",
+        "cookies",
+        "hashlib",
+        "http.cookiejar",
+        "models",
+        "os",
+        "re",
+        "threading",
+        "time",
+        "typing",
+        "utils",
+        "warnings"
+      ],
+      "functions": [
+        "KD",
+        "__call__",
+        "__eq__",
+        "__init__",
+        "__ne__",
+        "_basic_auth_str",
+        "build_digest_header",
+        "handle_401",
+        "handle_redirect",
+        "init_per_thread_state",
+        "md5_utf8",
+        "sha256_utf8",
+        "sha512_utf8",
+        "sha_utf8"
+      ],
+      "classes": [
+        "AuthBase",
+        "HTTPBasicAuth",
+        "HTTPDigestAuth",
+        "HTTPProxyAuth"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/certs.py",
+      "imports": [
+        "certifi"
+      ],
+      "functions": [],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/compat.py",
+      "imports": [
+        "__future__",
+        "chardet",
+        "collections",
+        "collections.abc",
+        "http",
+        "http.cookies",
+        "importlib",
+        "io",
+        "json",
+        "simplejson",
+        "sys",
+        "types",
+        "typing",
+        "urllib.parse",
+        "urllib.request",
+        "urllib3"
+      ],
+      "functions": [
+        "_resolve_char_detection"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/cookies.py",
+      "imports": [
+        "__future__",
+        "_internal_utils",
+        "_types",
+        "_typeshed",
+        "calendar",
+        "collections.abc",
+        "compat",
+        "copy",
+        "http.cookiejar",
+        "models",
+        "threading",
+        "time",
+        "typing"
+      ],
+      "functions": [
+        "__contains__",
+        "__delitem__",
+        "__getitem__",
+        "__getstate__",
+        "__init__",
+        "__iter__",
+        "__setitem__",
+        "__setstate__",
+        "_copy_cookie_jar",
+        "_find",
+        "_find_no_duplicates",
+        "add_header",
+        "add_unredirected_header",
+        "cookiejar_from_dict",
+        "copy",
+        "create_cookie",
+        "extract_cookies_to_jar",
+        "get",
+        "get_cookie_header",
+        "get_dict",
+        "get_full_url",
+        "get_header",
+        "get_host",
+        "get_new_headers",
+        "get_origin_req_host",
+        "get_policy",
+        "get_type",
+        "getheaders",
+        "has_header",
+        "host",
+        "info",
+        "is_unverifiable",
+        "items",
+        "iteritems",
+        "iterkeys",
+        "itervalues",
+        "keys",
+        "list_domains",
+        "list_paths",
+        "merge_cookies",
+        "morsel_to_cookie",
+        "multiple_domains",
+        "origin_req_host",
+        "remove_cookie_by_name",
+        "set",
+        "set_cookie",
+        "unverifiable",
+        "update",
+        "values"
+      ],
+      "classes": [
+        "CookieConflictError",
+        "MockRequest",
+        "MockResponse",
+        "RequestsCookieJar"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/exceptions.py",
+      "imports": [
+        "__future__",
+        "compat",
+        "models",
+        "typing",
+        "urllib3.exceptions"
+      ],
+      "functions": [
+        "__init__",
+        "__reduce__"
+      ],
+      "classes": [
+        "ChunkedEncodingError",
+        "ConnectTimeout",
+        "ConnectionError",
+        "ContentDecodingError",
+        "FileModeWarning",
+        "HTTPError",
+        "InvalidHeader",
+        "InvalidJSONError",
+        "InvalidProxyURL",
+        "InvalidSchema",
+        "InvalidURL",
+        "JSONDecodeError",
+        "MissingSchema",
+        "ProxyError",
+        "ReadTimeout",
+        "RequestException",
+        "RequestsDependencyWarning",
+        "RequestsWarning",
+        "RetryError",
+        "SSLError",
+        "StreamConsumedError",
+        "Timeout",
+        "TooManyRedirects",
+        "URLRequired",
+        "UnrewindableBodyError"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/help.py",
+      "imports": [
+        "OpenSSL",
+        "chardet",
+        "charset_normalizer",
+        "cryptography",
+        "idna",
+        "json",
+        "platform",
+        "ssl",
+        "sys",
+        "typing",
+        "urllib3",
+        "urllib3.contrib"
+      ],
+      "functions": [
+        "_implementation",
+        "info",
+        "main"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/hooks.py",
+      "imports": [
+        "__future__",
+        "collections.abc",
+        "models",
+        "typing"
+      ],
+      "functions": [
+        "default_hooks",
+        "dispatch_hook"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/models.py",
+      "imports": [
+        "__future__",
+        "_internal_utils",
+        "adapters",
+        "auth",
+        "collections.abc",
+        "compat",
+        "cookies",
+        "datetime",
+        "encodings.idna",
+        "exceptions",
+        "hooks",
+        "http.cookiejar",
+        "idna",
+        "io",
+        "status_codes",
+        "structures",
+        "typing",
+        "typing_extensions",
+        "urllib3.exceptions",
+        "urllib3.fields",
+        "urllib3.filepost",
+        "urllib3.util",
+        "utils"
+      ],
+      "functions": [
+        "__bool__",
+        "__enter__",
+        "__exit__",
+        "__getstate__",
+        "__init__",
+        "__iter__",
+        "__nonzero__",
+        "__repr__",
+        "__setstate__",
+        "_encode_files",
+        "_encode_params",
+        "_get_idna_encoded_host",
+        "apparent_encoding",
+        "close",
+        "content",
+        "copy",
+        "deregister_hook",
+        "generate",
+        "is_permanent_redirect",
+        "is_redirect",
+        "iter_content",
+        "iter_lines",
+        "json",
+        "links",
+        "next",
+        "ok",
+        "path_url",
+        "prepare",
+        "prepare_auth",
+        "prepare_body",
+        "prepare_content_length",
+        "prepare_cookies",
+        "prepare_headers",
+        "prepare_hooks",
+        "prepare_method",
+        "prepare_url",
+        "raise_for_status",
+        "register_hook",
+        "text"
+      ],
+      "classes": [
+        "PreparedRequest",
+        "Request",
+        "RequestEncodingMixin",
+        "RequestHooksMixin",
+        "Response"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/packages.py",
+      "imports": [
+        "compat",
+        "sys"
+      ],
+      "functions": [],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/sessions.py",
+      "imports": [
+        "__future__",
+        "_internal_utils",
+        "_types",
+        "adapters",
+        "auth",
+        "collections",
+        "collections.abc",
+        "compat",
+        "cookies",
+        "datetime",
+        "exceptions",
+        "hooks",
+        "http.cookiejar",
+        "models",
+        "os",
+        "status_codes",
+        "structures",
+        "sys",
+        "time",
+        "typing",
+        "typing_extensions",
+        "utils"
+      ],
+      "functions": [
+        "__enter__",
+        "__exit__",
+        "__getstate__",
+        "__init__",
+        "__setstate__",
+        "close",
+        "delete",
+        "get",
+        "get_adapter",
+        "get_redirect_target",
+        "head",
+        "merge_environment_settings",
+        "merge_hooks",
+        "merge_setting",
+        "mount",
+        "options",
+        "patch",
+        "post",
+        "prepare_request",
+        "put",
+        "rebuild_auth",
+        "rebuild_method",
+        "rebuild_proxies",
+        "request",
+        "resolve_redirects",
+        "send",
+        "session",
+        "should_strip_auth"
+      ],
+      "classes": [
+        "Session",
+        "SessionRedirectMixin"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/status_codes.py",
+      "imports": [
+        "structures"
+      ],
+      "functions": [
+        "_init",
+        "doc"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/structures.py",
+      "imports": [
+        "__future__",
+        "collections",
+        "collections.abc",
+        "compat",
+        "typing"
+      ],
+      "functions": [
+        "__delitem__",
+        "__eq__",
+        "__getattr__",
+        "__getitem__",
+        "__init__",
+        "__iter__",
+        "__len__",
+        "__repr__",
+        "__setitem__",
+        "copy",
+        "get",
+        "lower_items"
+      ],
+      "classes": [
+        "CaseInsensitiveDict",
+        "LookupDict"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/src/requests/utils.py",
+      "imports": [
+        "__future__",
+        "__version__",
+        "_internal_utils",
+        "_types",
+        "codecs",
+        "collections",
+        "collections.abc",
+        "compat",
+        "contextlib",
+        "cookies",
+        "exceptions",
+        "http.cookiejar",
+        "io",
+        "models",
+        "netrc",
+        "os",
+        "re",
+        "socket",
+        "struct",
+        "structures",
+        "sys",
+        "tempfile",
+        "typing",
+        "urllib3.util",
+        "warnings",
+        "winreg",
+        "zipfile"
+      ],
+      "functions": [
+        "_parse_content_type_header",
+        "_validate_header_part",
+        "add_dict_to_cookiejar",
+        "address_in_network",
+        "atomic_open",
+        "check_header_validity",
+        "default_headers",
+        "default_user_agent",
+        "dict_from_cookiejar",
+        "dict_to_sequence",
+        "dotted_netmask",
+        "extract_zipped_paths",
+        "from_key_val_list",
+        "get_auth_from_url",
+        "get_encoding_from_headers",
+        "get_encodings_from_content",
+        "get_environ_proxies",
+        "get_netrc_auth",
+        "get_proxy",
+        "get_unicode_from_response",
+        "guess_filename",
+        "guess_json_utf",
+        "is_ipv4_address",
+        "is_valid_cidr",
+        "iter_slices",
+        "parse_dict_header",
+        "parse_header_links",
+        "parse_list_header",
+        "prepend_scheme_if_needed",
+        "proxy_bypass",
+        "proxy_bypass_registry",
+        "requote_uri",
+        "resolve_proxies",
+        "rewind_body",
+        "select_proxy",
+        "set_environ",
+        "should_bypass_proxies",
+        "stream_decode_response_unicode",
+        "super_len",
+        "to_key_val_list",
+        "unquote_header_value",
+        "unquote_unreserved",
+        "urldefragauth"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/__init__.py",
+      "imports": [
+        "urllib3.exceptions",
+        "warnings"
+      ],
+      "functions": [],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/compat.py",
+      "imports": [
+        "StringIO",
+        "cStringIO",
+        "io",
+        "warnings"
+      ],
+      "functions": [
+        "u"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/conftest.py",
+      "imports": [
+        "BaseHTTPServer",
+        "SimpleHTTPServer",
+        "http.server",
+        "pytest",
+        "requests.compat",
+        "ssl",
+        "threading",
+        "trustme"
+      ],
+      "functions": [
+        "clean_proxy_environ",
+        "httpbin",
+        "httpbin_secure",
+        "inner",
+        "nosan_server",
+        "prepare_url"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_adapters.py",
+      "imports": [
+        "requests.adapters"
+      ],
+      "functions": [
+        "test_request_url_handles_leading_path_separators"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_help.py",
+      "imports": [
+        "requests.help",
+        "unittest"
+      ],
+      "functions": [
+        "__init__",
+        "test_idna_with_version_attribute",
+        "test_idna_without_version_attribute",
+        "test_system_ssl"
+      ],
+      "classes": [
+        "VersionedPackage"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_hooks.py",
+      "imports": [
+        "pytest",
+        "requests"
+      ],
+      "functions": [
+        "hook",
+        "test_default_hooks",
+        "test_hooks"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_lowlevel.py",
+      "imports": [
+        "pytest",
+        "requests",
+        "requests.compat",
+        "tests.testserver.server",
+        "threading",
+        "utils"
+      ],
+      "functions": [
+        "digest_failed_response_handler",
+        "digest_response_handler",
+        "echo_response_handler",
+        "incomplete_chunked_response_handler",
+        "multiple_content_length_response_handler",
+        "redirect_resp_handler",
+        "response_handler",
+        "test_chunked_encoding_error",
+        "test_chunked_upload",
+        "test_chunked_upload_doesnt_skip_host_header",
+        "test_chunked_upload_uses_only_specified_host_header",
+        "test_conflicting_content_lengths",
+        "test_digestauth_401_count_reset_on_redirect",
+        "test_digestauth_401_only_sent_once",
+        "test_digestauth_only_on_4xx",
+        "test_fragment_not_sent_with_request",
+        "test_fragment_update_on_redirect",
+        "test_json_decode_compatibility_for_alt_utf_encodings",
+        "test_redirect_rfc1808_to_non_ascii_location",
+        "test_use_proxy_from_environment"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_packages.py",
+      "imports": [
+        "requests"
+      ],
+      "functions": [
+        "test_can_access_chardet_attribute",
+        "test_can_access_idna_attribute",
+        "test_can_access_urllib3_attribute"
+      ],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_requests.py",
+      "imports": [
+        "collections",
+        "compat",
+        "contextlib",
+        "io",
+        "json",
+        "os",
+        "pickle",
+        "pytest",
+        "re",
+        "requests",
+        "requests.adapters",
+        "requests.auth",
+        "requests.compat",
+        "requests.cookies",
+        "requests.exceptions",
+        "requests.hooks",
+        "requests.models",
+        "requests.packages.urllib3.poolmanager",
+        "requests.sessions",
+        "requests.structures",
+        "ssl",
+        "tempfile",
+        "testserver.server",
+        "threading",
+        "unittest",
+        "urllib3",
+        "urllib3.util",
+        "utils",
+        "warnings"
+      ],
+      "functions": [
+        "__call__",
+        "__delitem__",
+        "__getattr__",
+        "__getitem__",
+        "__init__",
+        "__iter__",
+        "__len__",
+        "__setitem__",
+        "_build_raw",
+        "_patch_adapter_gzipped_redirect",
+        "build_response",
+        "get_netrc_auth_mock",
+        "get_redirect_target",
+        "hook",
+        "hook1",
+        "hook2",
+        "normalize_percent_encode",
+        "read",
+        "read_mock",
+        "response_handler",
+        "seek",
+        "send",
+        "tell",
+        "test_BASICAUTH_TUPLE_HTTP_200_OK_GET",
+        "test_DIGESTAUTH_QUOTES_QOP_VALUE",
+        "test_DIGESTAUTH_WRONG_HTTP_401_GET",
+        "test_DIGEST_AUTH_RETURNS_COOKIE",
+        "test_DIGEST_AUTH_SETS_SESSION_COOKIES",
+        "test_DIGEST_HTTP_200_OK_GET",
+        "test_DIGEST_STREAM",
+        "test_HTTP_200_OK_GET_ALTERNATIVE",
+        "test_HTTP_200_OK_GET_WITH_MIXED_PARAMS",
+        "test_HTTP_200_OK_GET_WITH_PARAMS",
+        "test_HTTP_200_OK_HEAD",
+        "test_HTTP_200_OK_PUT",
+        "test_HTTP_302_ALLOW_REDIRECT_GET",
+        "test_HTTP_302_TOO_MANY_REDIRECTS",
+        "test_HTTP_302_TOO_MANY_REDIRECTS_WITH_PARAMS",
+        "test_HTTP_307_ALLOW_REDIRECT_POST",
+        "test_HTTP_307_ALLOW_REDIRECT_POST_WITH_SEEKABLE",
+        "test_POSTBIN_GET_POST_FILES",
+        "test_POSTBIN_GET_POST_FILES_WITH_DATA",
+        "test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER",
+        "test_auth_is_retained_for_redirect_on_host",
+        "test_auth_is_stripped_on_http_downgrade",
+        "test_autoset_header_values_are_native",
+        "test_basic_auth_str_is_always_native",
+        "test_basic_building",
+        "test_basicauth_encodes_byte_strings",
+        "test_basicauth_with_netrc",
+        "test_basicauth_with_netrc_leak",
+        "test_binary_put",
+        "test_can_send_file_object_with_non_string_filename",
+        "test_can_send_objects_with_files",
+        "test_cannot_send_unprepared_requests",
+        "test_certificate_failure",
+        "test_chunked_upload_does_not_set_content_length_header",
+        "test_conflicting_post_params",
+        "test_connect_timeout",
+        "test_contains",
+        "test_content_length_for_bytes_data",
+        "test_content_length_for_string_data_counts_bytes",
+        "test_cookie_as_dict_items",
+        "test_cookie_as_dict_keeps_items",
+        "test_cookie_as_dict_keeps_len",
+        "test_cookie_as_dict_keys",
+        "test_cookie_as_dict_values",
+        "test_cookie_duplicate_names_different_domains",
+        "test_cookie_duplicate_names_raises_cookie_conflict_error",
+        "test_cookie_parameters",
+        "test_cookie_persists_via_api",
+        "test_cookie_policy_copy",
+        "test_cookie_quote_wrapped",
+        "test_cookie_removed_on_expire",
+        "test_cookie_sent_on_redirect",
+        "test_cookielib_cookiejar_on_redirect",
+        "test_copy",
+        "test_custom_content_type",
+        "test_custom_redirect_mixin",
+        "test_data_argument_accepts_tuples",
+        "test_decompress_gzip",
+        "test_delitem",
+        "test_different_connection_pool_for_mtls_settings",
+        "test_different_connection_pool_for_tls_settings_verify_True",
+        "test_different_connection_pool_for_tls_settings_verify_bundle_expired_cert",
+        "test_different_connection_pool_for_tls_settings_verify_bundle_unexpired_cert",
+        "test_different_encodings_dont_break_post",
+        "test_docstring_example",
+        "test_empty_content_length",
+        "test_empty_response_has_content_none",
+        "test_empty_stream_with_auth_does_not_set_content_length_header",
+        "test_encoded_methods",
+        "test_entry_points",
+        "test_env_cert_bundles",
+        "test_equality",
+        "test_errors",
+        "test_expires_invalid_int",
+        "test_expires_none",
+        "test_expires_valid_str",
+        "test_fixes_1329",
+        "test_fixes_649",
+        "test_form_encoded_post_query_multivalued_element",
+        "test_fragment_maintained_on_redirect",
+        "test_generic_cookiejar_works",
+        "test_get",
+        "test_getattr_proxy_stream_follows_redirect",
+        "test_getitem",
+        "test_header_and_body_removal_on_redirect",
+        "test_header_keys_are_native",
+        "test_header_no_leading_space",
+        "test_header_no_return_chars",
+        "test_header_remove_is_case_insensitive",
+        "test_header_validation",
+        "test_header_value_not_str",
+        "test_header_with_subclass_types",
+        "test_headers_on_session_with_None_are_not_sent",
+        "test_headers_preserve_order",
+        "test_history_is_always_a_list",
+        "test_hook_receives_request_arguments",
+        "test_http_301_changes_post_to_get",
+        "test_http_301_doesnt_change_head_to_get",
+        "test_http_302_changes_post_to_get",
+        "test_http_302_doesnt_change_head_to_get",
+        "test_http_303_changes_post_to_get",
+        "test_http_303_doesnt_change_head_to_get",
+        "test_http_error",
+        "test_http_with_certificate",
+        "test_https_warnings",
+        "test_init",
+        "test_invalid_ca_certificate_path",
+        "test_invalid_files_input",
+        "test_invalid_ssl_certificate_files",
+        "test_invalid_timeout",
+        "test_invalid_url",
+        "test_iter",
+        "test_iter_content_wraps_exceptions",
+        "test_json_decode_compatibility",
+        "test_json_decode_errors_are_serializable_deserializable",
+        "test_json_decode_persists_doc_attr",
+        "test_json_encodes_as_bytes",
+        "test_json_param_post_content_type_works",
+        "test_json_param_post_should_not_override_data_param",
+        "test_len",
+        "test_links",
+        "test_long_authinfo_in_url",
+        "test_lower_items",
+        "test_manual_redirect_with_partial_body_read",
+        "test_max_age_invalid_str",
+        "test_max_age_valid_int",
+        "test_mixed_case_scheme_acceptable",
+        "test_no_body_content_length",
+        "test_no_content_length",
+        "test_non_prepared_request_error",
+        "test_none_timeout",
+        "test_nonhttp_schemes_dont_check_URLs",
+        "test_override_content_length",
+        "test_param_cookiejar_works",
+        "test_parameters_for_nonstandard_schemes",
+        "test_params_are_added_before_fragment",
+        "test_params_are_merged_case_sensitive",
+        "test_params_bytes_are_encoded",
+        "test_params_original_order_is_preserved_by_default",
+        "test_path_is_not_double_encoded",
+        "test_post_getattr_proxy_read_only",
+        "test_post_json_nan",
+        "test_post_named_tempfile",
+        "test_post_with_custom_mapping",
+        "test_prepare_body_position_non_stream",
+        "test_prepare_request_with_bytestring_url",
+        "test_prepared_copy",
+        "test_prepared_from_session",
+        "test_prepared_request_hook",
+        "test_prepared_request_is_pickleable",
+        "test_prepared_request_with_file_is_pickleable",
+        "test_prepared_request_with_hook_is_pickleable",
+        "test_preparing_bad_url",
+        "test_preparing_url",
+        "test_preserve_key_case",
+        "test_preserve_last_key_case",
+        "test_proxy_auth",
+        "test_proxy_auth_empty_pass",
+        "test_proxy_authorization_not_appended_to_https_request",
+        "test_proxy_authorization_preserved_on_request",
+        "test_proxy_env_vars_override_default",
+        "test_proxy_error",
+        "test_proxy_error_on_bad_url",
+        "test_pyopenssl_redirect",
+        "test_read_timeout",
+        "test_redirect_history_no_self_reference",
+        "test_redirect_with_wrong_gzipped_header",
+        "test_redirecting_to_bad_url",
+        "test_request_and_response_are_pickleable",
+        "test_request_cookie_overrides_session_cookie",
+        "test_request_cookies_not_persisted",
+        "test_request_ok_set",
+        "test_request_with_bytestring_host",
+        "test_requests_are_updated_each_time",
+        "test_requests_history_is_saved",
+        "test_requests_in_history_are_not_overridden",
+        "test_respect_proxy_env_on_get",
+        "test_respect_proxy_env_on_request",
+        "test_respect_proxy_env_on_send_self_prepared_request",
+        "test_respect_proxy_env_on_send_session_prepared_request",
+        "test_respect_proxy_env_on_send_with_redirects",
+        "test_response_chunk_size_type",
+        "test_response_context_manager",
+        "test_response_decode_unicode",
+        "test_response_is_iterable",
+        "test_response_iter_lines",
+        "test_response_iter_lines_reentrant",
+        "test_response_json_when_content_is_None",
+        "test_response_reason_unicode",
+        "test_response_reason_unicode_fallback",
+        "test_response_without_release_conn",
+        "test_rewind_body",
+        "test_rewind_body_failed_seek",
+        "test_rewind_body_failed_tell",
+        "test_rewind_body_no_seek",
+        "test_rewind_partially_read_body",
+        "test_session_close_proxy_clear",
+        "test_session_get_adapter_prefix_matching",
+        "test_session_get_adapter_prefix_matching_is_case_insensitive",
+        "test_session_get_adapter_prefix_matching_mixed_case",
+        "test_session_get_adapter_prefix_with_trailing_slash",
+        "test_session_get_adapter_prefix_without_trailing_slash",
+        "test_session_hooks_are_overridden_by_request_hooks",
+        "test_session_hooks_are_used_with_no_request_hooks",
+        "test_session_pickling",
+        "test_set_basicauth",
+        "test_set_cookie_on_301",
+        "test_setdefault",
+        "test_should_strip_auth_default_port",
+        "test_should_strip_auth_host_change",
+        "test_should_strip_auth_http_downgrade",
+        "test_should_strip_auth_https_upgrade",
+        "test_should_strip_auth_port_change",
+        "test_status_code_425",
+        "test_status_raising",
+        "test_stream_timeout",
+        "test_stream_with_auth_does_not_set_transfer_encoding_header",
+        "test_time_elapsed_blank",
+        "test_total_timeout_connect",
+        "test_transfer_enc_removal_on_redirect",
+        "test_transport_adapter_ordering",
+        "test_unconsumed_session_response_closes_connection",
+        "test_unicode_get",
+        "test_unicode_header_name",
+        "test_unicode_method_name",
+        "test_unicode_method_name_with_request_object",
+        "test_unicode_multipart_post",
+        "test_unicode_multipart_post_fieldnames",
+        "test_update",
+        "test_update_retains_unchanged",
+        "test_uppercase_scheme_redirect",
+        "test_url_mutation",
+        "test_urlencoded_get_query_multivalued_param",
+        "test_urllib3_pool_connection_closed",
+        "test_urllib3_retries",
+        "test_user_agent_transfers",
+        "test_whitespaces_are_removed_from_url"
+      ],
+      "classes": [
+        "AttrProxy",
+        "BadFileObj",
+        "CustomMapping",
+        "CustomRedirectSession",
+        "DummyAuth",
+        "MyBytes",
+        "MyCookiePolicy",
+        "MyString",
+        "ReadProxy",
+        "RedirectSession",
+        "TestCaseInsensitiveDict",
+        "TestMorselToCookieExpires",
+        "TestMorselToCookieMaxAge",
+        "TestPreparingURLs",
+        "TestRequests",
+        "TestStream",
+        "TestTimeout"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_structures.py",
+      "imports": [
+        "pytest",
+        "requests.structures"
+      ],
+      "functions": [
+        "setup",
+        "test_copy",
+        "test_delitem",
+        "test_get",
+        "test_getattr",
+        "test_getattr_default",
+        "test_getitem",
+        "test_hasattr",
+        "test_instance_equality",
+        "test_list",
+        "test_lower_items",
+        "test_repr"
+      ],
+      "classes": [
+        "TestCaseInsensitiveDict",
+        "TestLookupDict"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_testserver.py",
+      "imports": [
+        "pytest",
+        "requests",
+        "socket",
+        "tests.testserver.server",
+        "threading",
+        "time"
+      ],
+      "functions": [
+        "handler",
+        "test_basic",
+        "test_basic_response",
+        "test_basic_waiting_server",
+        "test_multiple_requests",
+        "test_request_recovery",
+        "test_request_recovery_with_bigger_timeout",
+        "test_requests_after_timeout_are_not_received",
+        "test_server_closes",
+        "test_server_finishes_on_error",
+        "test_server_finishes_when_no_connections",
+        "test_text_response"
+      ],
+      "classes": [
+        "TestTestServer"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/test_utils.py",
+      "imports": [
+        "collections",
+        "compat",
+        "copy",
+        "filecmp",
+        "io",
+        "os",
+        "pytest",
+        "requests",
+        "requests._internal_utils",
+        "requests.cookies",
+        "requests.structures",
+        "requests.utils",
+        "tarfile",
+        "unittest",
+        "winreg",
+        "zipfile"
+      ],
+      "functions": [
+        "Close",
+        "OpenKey",
+        "QueryValueEx",
+        "__init__",
+        "__len__",
+        "no_proxy",
+        "seek",
+        "tell",
+        "test__parse_content_type_header",
+        "test_add_dict_to_cookiejar",
+        "test_bad_utf_like_encoding",
+        "test_bypass",
+        "test_bypass_no_proxy_keyword",
+        "test_dotted_netmask",
+        "test_empty_default_credentials_ignored",
+        "test_encoded",
+        "test_file",
+        "test_get_auth_from_url",
+        "test_get_encoding_from_headers",
+        "test_guess_by_bom",
+        "test_guess_filename_invalid",
+        "test_guess_filename_valid",
+        "test_invalid",
+        "test_invalid_unc_path",
+        "test_io_streams",
+        "test_is_filename",
+        "test_iter_slices",
+        "test_none",
+        "test_not_bypass",
+        "test_not_bypass_no_proxy_keyword",
+        "test_not_vulnerable_to_bad_url_parsing",
+        "test_parse_dict_header",
+        "test_parse_header_links",
+        "test_pragmas",
+        "test_precedence",
+        "test_prepend_scheme_if_needed",
+        "test_requote_uri_with_unquoted_percents",
+        "test_select_proxies",
+        "test_set_environ",
+        "test_set_environ_raises_exception",
+        "test_should_bypass_proxies",
+        "test_should_bypass_proxies_no_proxy",
+        "test_should_bypass_proxies_no_proxy_domain_boundary",
+        "test_should_bypass_proxies_pass_only_hostname",
+        "test_should_bypass_proxies_win_registry",
+        "test_should_bypass_proxies_win_registry_ProxyOverride_value",
+        "test_should_bypass_proxies_win_registry_bad_values",
+        "test_string",
+        "test_super_len_correctly_calculates_len_of_partially_read_file",
+        "test_super_len_handles_files_raising_weird_errors_in_tell",
+        "test_super_len_tell_ioerror",
+        "test_super_len_with__len__",
+        "test_super_len_with_fileno",
+        "test_super_len_with_no__len__",
+        "test_super_len_with_no_matches",
+        "test_super_len_with_tell",
+        "test_tarfile_member",
+        "test_to_native_string",
+        "test_unicode_is_ascii",
+        "test_unquote_unreserved",
+        "test_unzipped_paths_unchanged",
+        "test_urldefragauth",
+        "test_valid",
+        "test_works",
+        "test_zipped_paths_extracted"
+      ],
+      "classes": [
+        "BoomFile",
+        "LenFile",
+        "NoLenBoomFile",
+        "RegHandle",
+        "TestAddressInNetwork",
+        "TestContentEncodingDetection",
+        "TestExtractZippedPaths",
+        "TestGetEnvironProxies",
+        "TestGetNetrcAuth",
+        "TestGuessFilename",
+        "TestGuessJSONUTF",
+        "TestIsIPv4Address",
+        "TestIsValidCIDR",
+        "TestSuperLen",
+        "TestToKeyValList",
+        "TestUnquoteHeaderValue"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/testserver/__init__.py",
+      "imports": [],
+      "functions": [],
+      "classes": []
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/testserver/server.py",
+      "imports": [
+        "select",
+        "socket",
+        "ssl",
+        "threading"
+      ],
+      "functions": [
+        "__enter__",
+        "__exit__",
+        "__init__",
+        "_accept_connection",
+        "_close_server_sock_ignore_errors",
+        "_create_socket_and_bind",
+        "_handle_requests",
+        "basic_response_server",
+        "consume_socket_content",
+        "run",
+        "text_response_handler",
+        "text_response_server"
+      ],
+      "classes": [
+        "Server",
+        "TLSServer"
+      ]
+    },
+    {
+      "file": "artifacts/repositories/requests/tests/utils.py",
+      "imports": [
+        "contextlib",
+        "os"
+      ],
+      "functions": [
+        "override_environ"
+      ],
+      "classes": []
+    }
+  ],
+  "dependency_graph": {
+    "edges": [
+      {
+        "source": "docs/conf.py",
+        "target": "src/requests/__init__.py",
+        "import": "requests"
+      },
+      {
+        "source": "src/requests/__init__.py",
+        "target": "src/requests/__version__.py",
+        "import": "requests.__version__"
+      },
+      {
+        "source": "src/requests/__init__.py",
+        "target": "src/requests/api.py",
+        "import": "requests.api"
+      },
+      {
+        "source": "src/requests/__init__.py",
+        "target": "src/requests/exceptions.py",
+        "import": "requests.exceptions"
+      },
+      {
+        "source": "src/requests/__init__.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/__init__.py",
+        "target": "src/requests/packages.py",
+        "import": "requests.packages"
+      },
+      {
+        "source": "src/requests/__init__.py",
+        "target": "src/requests/sessions.py",
+        "import": "requests.sessions"
+      },
+      {
+        "source": "src/requests/__init__.py",
+        "target": "src/requests/status_codes.py",
+        "import": "requests.status_codes"
+      },
+      {
+        "source": "src/requests/__init__.py",
+        "target": "src/requests/utils.py",
+        "import": "requests.utils"
+      },
+      {
+        "source": "src/requests/_internal_utils.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/_types.py",
+        "target": "src/requests/auth.py",
+        "import": "requests.auth"
+      },
+      {
+        "source": "src/requests/_types.py",
+        "target": "src/requests/cookies.py",
+        "import": "requests.cookies"
+      },
+      {
+        "source": "src/requests/_types.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/_types.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "src/requests/adapters.py",
+        "target": "src/requests/_types.py",
+        "import": "requests._types"
+      },
+      {
+        "source": "src/requests/adapters.py",
+        "target": "src/requests/auth.py",
+        "import": "requests.auth"
+      },
+      {
+        "source": "src/requests/adapters.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/adapters.py",
+        "target": "src/requests/cookies.py",
+        "import": "requests.cookies"
+      },
+      {
+        "source": "src/requests/adapters.py",
+        "target": "src/requests/exceptions.py",
+        "import": "requests.exceptions"
+      },
+      {
+        "source": "src/requests/adapters.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/adapters.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "src/requests/adapters.py",
+        "target": "src/requests/utils.py",
+        "import": "requests.utils"
+      },
+      {
+        "source": "src/requests/api.py",
+        "target": "src/requests/_types.py",
+        "import": "requests._types"
+      },
+      {
+        "source": "src/requests/api.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/api.py",
+        "target": "src/requests/sessions.py",
+        "import": "requests.sessions"
+      },
+      {
+        "source": "src/requests/auth.py",
+        "target": "src/requests/_internal_utils.py",
+        "import": "requests._internal_utils"
+      },
+      {
+        "source": "src/requests/auth.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/auth.py",
+        "target": "src/requests/cookies.py",
+        "import": "requests.cookies"
+      },
+      {
+        "source": "src/requests/auth.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/auth.py",
+        "target": "src/requests/utils.py",
+        "import": "requests.utils"
+      },
+      {
+        "source": "src/requests/cookies.py",
+        "target": "src/requests/_internal_utils.py",
+        "import": "requests._internal_utils"
+      },
+      {
+        "source": "src/requests/cookies.py",
+        "target": "src/requests/_types.py",
+        "import": "requests._types"
+      },
+      {
+        "source": "src/requests/cookies.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/cookies.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/exceptions.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/exceptions.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/help.py",
+        "target": "src/requests/__version__.py",
+        "import": "requests.__version__"
+      },
+      {
+        "source": "src/requests/hooks.py",
+        "target": "src/requests/_types.py",
+        "import": "requests._types"
+      },
+      {
+        "source": "src/requests/hooks.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/_internal_utils.py",
+        "import": "requests._internal_utils"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/_types.py",
+        "import": "requests._types"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/adapters.py",
+        "import": "requests.adapters"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/auth.py",
+        "import": "requests.auth"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/cookies.py",
+        "import": "requests.cookies"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/exceptions.py",
+        "import": "requests.exceptions"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/hooks.py",
+        "import": "requests.hooks"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/status_codes.py",
+        "import": "requests.status_codes"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "src/requests/models.py",
+        "target": "src/requests/utils.py",
+        "import": "requests.utils"
+      },
+      {
+        "source": "src/requests/packages.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/_internal_utils.py",
+        "import": "requests._internal_utils"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/_types.py",
+        "import": "requests._types"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/adapters.py",
+        "import": "requests.adapters"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/auth.py",
+        "import": "requests.auth"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/cookies.py",
+        "import": "requests.cookies"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/exceptions.py",
+        "import": "requests.exceptions"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/hooks.py",
+        "import": "requests.hooks"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/status_codes.py",
+        "import": "requests.status_codes"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "src/requests/sessions.py",
+        "target": "src/requests/utils.py",
+        "import": "requests.utils"
+      },
+      {
+        "source": "src/requests/status_codes.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "src/requests/structures.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/__version__.py",
+        "import": "requests.__version__"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/_internal_utils.py",
+        "import": "requests._internal_utils"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/_types.py",
+        "import": "requests._types"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/certs.py",
+        "import": "requests.certs"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/cookies.py",
+        "import": "requests.cookies"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/exceptions.py",
+        "import": "requests.exceptions"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "src/requests/utils.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "tests/conftest.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "tests/test_adapters.py",
+        "target": "src/requests/adapters.py",
+        "import": "requests.adapters"
+      },
+      {
+        "source": "tests/test_help.py",
+        "target": "src/requests/help.py",
+        "import": "requests.help"
+      },
+      {
+        "source": "tests/test_hooks.py",
+        "target": "src/requests/__init__.py",
+        "import": "requests"
+      },
+      {
+        "source": "tests/test_hooks.py",
+        "target": "src/requests/hooks.py",
+        "import": "requests.hooks"
+      },
+      {
+        "source": "tests/test_lowlevel.py",
+        "target": "src/requests/__init__.py",
+        "import": "requests"
+      },
+      {
+        "source": "tests/test_lowlevel.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "tests/test_lowlevel.py",
+        "target": "tests/testserver/server.py",
+        "import": "tests.testserver.server"
+      },
+      {
+        "source": "tests/test_lowlevel.py",
+        "target": "tests/utils.py",
+        "import": "tests.utils"
+      },
+      {
+        "source": "tests/test_packages.py",
+        "target": "src/requests/__init__.py",
+        "import": "requests"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/__init__.py",
+        "import": "requests"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/adapters.py",
+        "import": "requests.adapters"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/auth.py",
+        "import": "requests.auth"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/cookies.py",
+        "import": "requests.cookies"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/exceptions.py",
+        "import": "requests.exceptions"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/hooks.py",
+        "import": "requests.hooks"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/models.py",
+        "import": "requests.models"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/sessions.py",
+        "import": "requests.sessions"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "tests/compat.py",
+        "import": "tests.compat"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "tests/testserver/server.py",
+        "import": "tests.testserver.server"
+      },
+      {
+        "source": "tests/test_requests.py",
+        "target": "tests/utils.py",
+        "import": "tests.utils"
+      },
+      {
+        "source": "tests/test_structures.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "tests/test_testserver.py",
+        "target": "src/requests/__init__.py",
+        "import": "requests"
+      },
+      {
+        "source": "tests/test_testserver.py",
+        "target": "tests/testserver/server.py",
+        "import": "tests.testserver.server"
+      },
+      {
+        "source": "tests/test_utils.py",
+        "target": "src/requests/__init__.py",
+        "import": "requests"
+      },
+      {
+        "source": "tests/test_utils.py",
+        "target": "src/requests/_internal_utils.py",
+        "import": "requests._internal_utils"
+      },
+      {
+        "source": "tests/test_utils.py",
+        "target": "src/requests/compat.py",
+        "import": "requests.compat"
+      },
+      {
+        "source": "tests/test_utils.py",
+        "target": "src/requests/cookies.py",
+        "import": "requests.cookies"
+      },
+      {
+        "source": "tests/test_utils.py",
+        "target": "src/requests/structures.py",
+        "import": "requests.structures"
+      },
+      {
+        "source": "tests/test_utils.py",
+        "target": "src/requests/utils.py",
+        "import": "requests.utils"
+      },
+      {
+        "source": "tests/test_utils.py",
+        "target": "tests/compat.py",
+        "import": "tests.compat"
+      }
+    ],
+    "summary": {
+      "total_edges": 107,
+      "files_with_outgoing_dependencies": 27,
+      "files_with_incoming_dependencies": 22,
+      "outgoing_dependencies": {
+        "tests/test_requests.py": 13,
+        "src/requests/sessions.py": 12,
+        "src/requests/models.py": 11,
+        "src/requests/utils.py": 9,
+        "src/requests/__init__.py": 8,
+        "src/requests/adapters.py": 8,
+        "tests/test_utils.py": 7,
+        "src/requests/auth.py": 5,
+        "src/requests/_types.py": 4,
+        "src/requests/cookies.py": 4,
+        "tests/test_lowlevel.py": 4,
+        "src/requests/api.py": 3,
+        "src/requests/exceptions.py": 2,
+        "src/requests/hooks.py": 2,
+        "tests/test_hooks.py": 2,
+        "tests/test_testserver.py": 2,
+        "docs/conf.py": 1,
+        "src/requests/_internal_utils.py": 1,
+        "src/requests/help.py": 1,
+        "src/requests/packages.py": 1,
+        "src/requests/status_codes.py": 1,
+        "src/requests/structures.py": 1,
+        "tests/conftest.py": 1,
+        "tests/test_adapters.py": 1,
+        "tests/test_help.py": 1,
+        "tests/test_packages.py": 1,
+        "tests/test_structures.py": 1
+      },
+      "incoming_dependencies": {
+        "src/requests/compat.py": 14,
+        "src/requests/models.py": 11,
+        "src/requests/structures.py": 9,
+        "src/requests/cookies.py": 8,
+        "src/requests/__init__.py": 7,
+        "src/requests/_types.py": 7,
+        "src/requests/_internal_utils.py": 6,
+        "src/requests/exceptions.py": 6,
+        "src/requests/utils.py": 6,
+        "src/requests/auth.py": 5,
+        "src/requests/adapters.py": 4,
+        "src/requests/hooks.py": 4,
+        "src/requests/__version__.py": 3,
+        "src/requests/sessions.py": 3,
+        "src/requests/status_codes.py": 3,
+        "tests/testserver/server.py": 3,
+        "tests/compat.py": 2,
+        "tests/utils.py": 2,
+        "src/requests/api.py": 1,
+        "src/requests/certs.py": 1,
+        "src/requests/help.py": 1,
+        "src/requests/packages.py": 1
+      }
+    }
+  },
+  "architecture": {
+    "production_modules": [
+      {
+        "file": "src/requests/__init__.py",
+        "module_name": "requests",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/__version__.py",
+          "src/requests/api.py",
+          "src/requests/exceptions.py",
+          "src/requests/models.py",
+          "src/requests/packages.py",
+          "src/requests/sessions.py",
+          "src/requests/status_codes.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_dependencies": [],
+        "outgoing_count": 8,
+        "incoming_count": 0,
+        "total_connections": 8
+      },
+      {
+        "file": "src/requests/__version__.py",
+        "module_name": "requests.__version__",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [],
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/help.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 0,
+        "incoming_count": 3,
+        "total_connections": 3
+      },
+      {
+        "file": "src/requests/_internal_utils.py",
+        "module_name": "requests._internal_utils",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/compat.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 1,
+        "incoming_count": 5,
+        "total_connections": 6
+      },
+      {
+        "file": "src/requests/_types.py",
+        "module_name": "requests._types",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/models.py",
+          "src/requests/structures.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/adapters.py",
+          "src/requests/api.py",
+          "src/requests/cookies.py",
+          "src/requests/hooks.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 4,
+        "incoming_count": 7,
+        "total_connections": 11
+      },
+      {
+        "file": "src/requests/adapters.py",
+        "module_name": "requests.adapters",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/auth.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/models.py",
+          "src/requests/structures.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "outgoing_count": 8,
+        "incoming_count": 2,
+        "total_connections": 10
+      },
+      {
+        "file": "src/requests/api.py",
+        "module_name": "requests.api",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/__init__.py"
+        ],
+        "outgoing_count": 3,
+        "incoming_count": 1,
+        "total_connections": 4
+      },
+      {
+        "file": "src/requests/auth.py",
+        "module_name": "requests.auth",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/models.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "outgoing_count": 5,
+        "incoming_count": 4,
+        "total_connections": 9
+      },
+      {
+        "file": "src/requests/certs.py",
+        "module_name": "requests.certs",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [],
+        "incoming_dependencies": [
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 0,
+        "incoming_count": 1,
+        "total_connections": 1
+      },
+      {
+        "file": "src/requests/compat.py",
+        "module_name": "requests.compat",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [],
+        "incoming_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/models.py",
+          "src/requests/packages.py",
+          "src/requests/sessions.py",
+          "src/requests/structures.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 0,
+        "incoming_count": 10,
+        "total_connections": 10
+      },
+      {
+        "file": "src/requests/cookies.py",
+        "module_name": "requests.cookies",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/_types.py",
+          "src/requests/compat.py",
+          "src/requests/models.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 4,
+        "incoming_count": 6,
+        "total_connections": 10
+      },
+      {
+        "file": "src/requests/exceptions.py",
+        "module_name": "requests.exceptions",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/compat.py",
+          "src/requests/models.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/adapters.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 2,
+        "incoming_count": 5,
+        "total_connections": 7
+      },
+      {
+        "file": "src/requests/help.py",
+        "module_name": "requests.help",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/__version__.py"
+        ],
+        "incoming_dependencies": [],
+        "outgoing_count": 1,
+        "incoming_count": 0,
+        "total_connections": 1
+      },
+      {
+        "file": "src/requests/hooks.py",
+        "module_name": "requests.hooks",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/models.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "outgoing_count": 2,
+        "incoming_count": 2,
+        "total_connections": 4
+      },
+      {
+        "file": "src/requests/models.py",
+        "module_name": "requests.models",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/hooks.py",
+          "src/requests/status_codes.py",
+          "src/requests/structures.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/api.py",
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/hooks.py",
+          "src/requests/sessions.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 11,
+        "incoming_count": 10,
+        "total_connections": 21
+      },
+      {
+        "file": "src/requests/packages.py",
+        "module_name": "requests.packages",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/compat.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/__init__.py"
+        ],
+        "outgoing_count": 1,
+        "incoming_count": 1,
+        "total_connections": 2
+      },
+      {
+        "file": "src/requests/sessions.py",
+        "module_name": "requests.sessions",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/hooks.py",
+          "src/requests/models.py",
+          "src/requests/status_codes.py",
+          "src/requests/structures.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/api.py"
+        ],
+        "outgoing_count": 12,
+        "incoming_count": 2,
+        "total_connections": 14
+      },
+      {
+        "file": "src/requests/status_codes.py",
+        "module_name": "requests.status_codes",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/structures.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "outgoing_count": 1,
+        "incoming_count": 3,
+        "total_connections": 4
+      },
+      {
+        "file": "src/requests/structures.py",
+        "module_name": "requests.structures",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/compat.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py",
+          "src/requests/status_codes.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_count": 1,
+        "incoming_count": 6,
+        "total_connections": 7
+      },
+      {
+        "file": "src/requests/utils.py",
+        "module_name": "requests.utils",
+        "type": "production",
+        "layer": "source",
+        "outgoing_dependencies": [
+          "src/requests/__version__.py",
+          "src/requests/_internal_utils.py",
+          "src/requests/_types.py",
+          "src/requests/certs.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/models.py",
+          "src/requests/structures.py"
+        ],
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "outgoing_count": 9,
+        "incoming_count": 5,
+        "total_connections": 14
+      }
+    ],
+    "layers": [
+      {
+        "file": ".coveragerc",
+        "layer": "other"
+      },
+      {
+        "file": ".git-blame-ignore-revs",
+        "layer": "other"
+      },
+      {
+        "file": ".github/AI_POLICY.md",
+        "layer": "documentation"
+      },
+      {
+        "file": ".github/CODEOWNERS",
+        "layer": "other"
+      },
+      {
+        "file": ".github/CODE_OF_CONDUCT.md",
+        "layer": "documentation"
+      },
+      {
+        "file": ".github/CONTRIBUTING.md",
+        "layer": "documentation"
+      },
+      {
+        "file": ".github/FUNDING.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/Bug_report.md",
+        "layer": "documentation"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/Custom.md",
+        "layer": "documentation"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/Feature_request.md",
+        "layer": "documentation"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE.md",
+        "layer": "documentation"
+      },
+      {
+        "file": ".github/SECURITY.md",
+        "layer": "documentation"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/workflows/close-issues.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/workflows/codeql-analysis.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/workflows/lint.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/workflows/lock-issues.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/workflows/publish.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/workflows/run-tests.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/workflows/typecheck.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".github/workflows/zizmor.yml",
+        "layer": "other"
+      },
+      {
+        "file": ".gitignore",
+        "layer": "other"
+      },
+      {
+        "file": ".pre-commit-config.yaml",
+        "layer": "other"
+      },
+      {
+        "file": ".readthedocs.yaml",
+        "layer": "other"
+      },
+      {
+        "file": "AUTHORS.rst",
+        "layer": "other"
+      },
+      {
+        "file": "HISTORY.md",
+        "layer": "documentation"
+      },
+      {
+        "file": "LICENSE",
+        "layer": "other"
+      },
+      {
+        "file": "MANIFEST.in",
+        "layer": "other"
+      },
+      {
+        "file": "Makefile",
+        "layer": "other"
+      },
+      {
+        "file": "NOTICE",
+        "layer": "other"
+      },
+      {
+        "file": "README.md",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/.nojekyll",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/Makefile",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/_static/custom.css",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/_static/requests-sidebar.png",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/_templates/sidebar.html",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/_themes/.gitignore",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/_themes/LICENSE",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/_themes/flask_theme_support.py",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/api.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/community/faq.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/community/out-there.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/community/recommended.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/community/release-process.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/community/support.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/community/updates.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/community/vulnerabilities.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/conf.py",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/dev/authors.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/dev/contributing.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/index.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/make.bat",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/requirements.txt",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/user/advanced.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/user/authentication.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/user/install.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "docs/user/quickstart.rst",
+        "layer": "documentation"
+      },
+      {
+        "file": "ext/LICENSE",
+        "layer": "other"
+      },
+      {
+        "file": "ext/kr.png",
+        "layer": "other"
+      },
+      {
+        "file": "ext/psf.png",
+        "layer": "other"
+      },
+      {
+        "file": "ext/requests-logo-compressed.png",
+        "layer": "other"
+      },
+      {
+        "file": "ext/requests-logo.ai",
+        "layer": "other"
+      },
+      {
+        "file": "ext/requests-logo.png",
+        "layer": "other"
+      },
+      {
+        "file": "ext/requests-logo.svg",
+        "layer": "other"
+      },
+      {
+        "file": "pyproject.toml",
+        "layer": "configuration"
+      },
+      {
+        "file": "requirements-dev.txt",
+        "layer": "documentation"
+      },
+      {
+        "file": "setup.py",
+        "layer": "configuration"
+      },
+      {
+        "file": "src/requests/__init__.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/__version__.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/_internal_utils.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/_types.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/adapters.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/api.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/auth.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/certs.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/compat.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/cookies.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/exceptions.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/help.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/hooks.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/models.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/packages.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/py.typed",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/sessions.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/status_codes.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/structures.py",
+        "layer": "source"
+      },
+      {
+        "file": "src/requests/utils.py",
+        "layer": "source"
+      },
+      {
+        "file": "tests/__init__.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/compat.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/conftest.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_adapters.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_help.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_hooks.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_lowlevel.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_packages.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_requests.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_structures.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_testserver.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/test_utils.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/testserver/__init__.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/testserver/server.py",
+        "layer": "test"
+      },
+      {
+        "file": "tests/utils.py",
+        "layer": "test"
+      },
+      {
+        "file": "tox.ini",
+        "layer": "configuration"
+      }
+    ],
+    "layer_summary": {
+      "configuration": 3,
+      "documentation": 37,
+      "other": 28,
+      "source": 20,
+      "test": 15
+    },
+    "layer_percentages": {
+      "configuration": 2.91,
+      "documentation": 35.92,
+      "other": 27.18,
+      "source": 19.42,
+      "test": 14.56
+    },
+    "graph": {
+      "nodes": [
+        {
+          "id": "src/requests/__init__.py",
+          "label": "requests",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/__version__.py",
+          "label": "requests.__version__",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/_internal_utils.py",
+          "label": "requests._internal_utils",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/_types.py",
+          "label": "requests._types",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/adapters.py",
+          "label": "requests.adapters",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/api.py",
+          "label": "requests.api",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/auth.py",
+          "label": "requests.auth",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/certs.py",
+          "label": "requests.certs",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/compat.py",
+          "label": "requests.compat",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/cookies.py",
+          "label": "requests.cookies",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/exceptions.py",
+          "label": "requests.exceptions",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/help.py",
+          "label": "requests.help",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/hooks.py",
+          "label": "requests.hooks",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/models.py",
+          "label": "requests.models",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/packages.py",
+          "label": "requests.packages",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/sessions.py",
+          "label": "requests.sessions",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/status_codes.py",
+          "label": "requests.status_codes",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/structures.py",
+          "label": "requests.structures",
+          "type": "production"
+        },
+        {
+          "id": "src/requests/utils.py",
+          "label": "requests.utils",
+          "type": "production"
+        }
+      ],
+      "edges": [
+        {
+          "source": "src/requests/__init__.py",
+          "target": "src/requests/__version__.py"
+        },
+        {
+          "source": "src/requests/__init__.py",
+          "target": "src/requests/api.py"
+        },
+        {
+          "source": "src/requests/__init__.py",
+          "target": "src/requests/exceptions.py"
+        },
+        {
+          "source": "src/requests/__init__.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/__init__.py",
+          "target": "src/requests/packages.py"
+        },
+        {
+          "source": "src/requests/__init__.py",
+          "target": "src/requests/sessions.py"
+        },
+        {
+          "source": "src/requests/__init__.py",
+          "target": "src/requests/status_codes.py"
+        },
+        {
+          "source": "src/requests/__init__.py",
+          "target": "src/requests/utils.py"
+        },
+        {
+          "source": "src/requests/_internal_utils.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/_types.py",
+          "target": "src/requests/auth.py"
+        },
+        {
+          "source": "src/requests/_types.py",
+          "target": "src/requests/cookies.py"
+        },
+        {
+          "source": "src/requests/_types.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/_types.py",
+          "target": "src/requests/structures.py"
+        },
+        {
+          "source": "src/requests/adapters.py",
+          "target": "src/requests/_types.py"
+        },
+        {
+          "source": "src/requests/adapters.py",
+          "target": "src/requests/auth.py"
+        },
+        {
+          "source": "src/requests/adapters.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/adapters.py",
+          "target": "src/requests/cookies.py"
+        },
+        {
+          "source": "src/requests/adapters.py",
+          "target": "src/requests/exceptions.py"
+        },
+        {
+          "source": "src/requests/adapters.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/adapters.py",
+          "target": "src/requests/structures.py"
+        },
+        {
+          "source": "src/requests/adapters.py",
+          "target": "src/requests/utils.py"
+        },
+        {
+          "source": "src/requests/api.py",
+          "target": "src/requests/_types.py"
+        },
+        {
+          "source": "src/requests/api.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/api.py",
+          "target": "src/requests/sessions.py"
+        },
+        {
+          "source": "src/requests/auth.py",
+          "target": "src/requests/_internal_utils.py"
+        },
+        {
+          "source": "src/requests/auth.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/auth.py",
+          "target": "src/requests/cookies.py"
+        },
+        {
+          "source": "src/requests/auth.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/auth.py",
+          "target": "src/requests/utils.py"
+        },
+        {
+          "source": "src/requests/cookies.py",
+          "target": "src/requests/_internal_utils.py"
+        },
+        {
+          "source": "src/requests/cookies.py",
+          "target": "src/requests/_types.py"
+        },
+        {
+          "source": "src/requests/cookies.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/cookies.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/exceptions.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/exceptions.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/help.py",
+          "target": "src/requests/__version__.py"
+        },
+        {
+          "source": "src/requests/hooks.py",
+          "target": "src/requests/_types.py"
+        },
+        {
+          "source": "src/requests/hooks.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/_internal_utils.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/_types.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/adapters.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/auth.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/cookies.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/exceptions.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/hooks.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/status_codes.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/structures.py"
+        },
+        {
+          "source": "src/requests/models.py",
+          "target": "src/requests/utils.py"
+        },
+        {
+          "source": "src/requests/packages.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/_internal_utils.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/_types.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/adapters.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/auth.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/cookies.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/exceptions.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/hooks.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/status_codes.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/structures.py"
+        },
+        {
+          "source": "src/requests/sessions.py",
+          "target": "src/requests/utils.py"
+        },
+        {
+          "source": "src/requests/status_codes.py",
+          "target": "src/requests/structures.py"
+        },
+        {
+          "source": "src/requests/structures.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/__version__.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/_internal_utils.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/_types.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/certs.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/compat.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/cookies.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/exceptions.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/models.py"
+        },
+        {
+          "source": "src/requests/utils.py",
+          "target": "src/requests/structures.py"
+        }
+      ]
+    },
+    "graph_summary": {
+      "node_count": 19,
+      "edge_count": 73,
+      "isolated_node_count": 0,
+      "isolated_nodes": [],
+      "top_connected_nodes": [
+        "src/requests/models.py",
+        "src/requests/sessions.py",
+        "src/requests/utils.py",
+        "src/requests/_types.py",
+        "src/requests/adapters.py"
+      ]
+    }
+  },
+  "risks": {
+    "risk_signals": [
+      {
+        "file": "src/requests/models.py",
+        "module_name": "requests.models",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 21,
+        "incoming_count": 10,
+        "outgoing_count": 11,
+        "severity": "high",
+        "status": "possible_risk",
+        "reason": "This module has 21 dependency connections (10 incoming and 11 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/models.py",
+          "incoming_dependencies": [
+            "src/requests/__init__.py",
+            "src/requests/_types.py",
+            "src/requests/adapters.py",
+            "src/requests/api.py",
+            "src/requests/auth.py",
+            "src/requests/cookies.py",
+            "src/requests/exceptions.py",
+            "src/requests/hooks.py",
+            "src/requests/sessions.py",
+            "src/requests/utils.py"
+          ],
+          "outgoing_dependencies": [
+            "src/requests/_internal_utils.py",
+            "src/requests/_types.py",
+            "src/requests/adapters.py",
+            "src/requests/auth.py",
+            "src/requests/compat.py",
+            "src/requests/cookies.py",
+            "src/requests/exceptions.py",
+            "src/requests/hooks.py",
+            "src/requests/status_codes.py",
+            "src/requests/structures.py",
+            "src/requests/utils.py"
+          ],
+          "incoming_count": 10,
+          "outgoing_count": 11,
+          "total_connections": 21
+        }
+      },
+      {
+        "file": "src/requests/sessions.py",
+        "module_name": "requests.sessions",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 14,
+        "incoming_count": 2,
+        "outgoing_count": 12,
+        "severity": "medium",
+        "status": "possible_risk",
+        "reason": "This module has 14 dependency connections (2 incoming and 12 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/sessions.py",
+          "incoming_dependencies": [
+            "src/requests/__init__.py",
+            "src/requests/api.py"
+          ],
+          "outgoing_dependencies": [
+            "src/requests/_internal_utils.py",
+            "src/requests/_types.py",
+            "src/requests/adapters.py",
+            "src/requests/auth.py",
+            "src/requests/compat.py",
+            "src/requests/cookies.py",
+            "src/requests/exceptions.py",
+            "src/requests/hooks.py",
+            "src/requests/models.py",
+            "src/requests/status_codes.py",
+            "src/requests/structures.py",
+            "src/requests/utils.py"
+          ],
+          "incoming_count": 2,
+          "outgoing_count": 12,
+          "total_connections": 14
+        }
+      },
+      {
+        "file": "src/requests/utils.py",
+        "module_name": "requests.utils",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 14,
+        "incoming_count": 5,
+        "outgoing_count": 9,
+        "severity": "medium",
+        "status": "possible_risk",
+        "reason": "This module has 14 dependency connections (5 incoming and 9 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/utils.py",
+          "incoming_dependencies": [
+            "src/requests/__init__.py",
+            "src/requests/adapters.py",
+            "src/requests/auth.py",
+            "src/requests/models.py",
+            "src/requests/sessions.py"
+          ],
+          "outgoing_dependencies": [
+            "src/requests/__version__.py",
+            "src/requests/_internal_utils.py",
+            "src/requests/_types.py",
+            "src/requests/certs.py",
+            "src/requests/compat.py",
+            "src/requests/cookies.py",
+            "src/requests/exceptions.py",
+            "src/requests/models.py",
+            "src/requests/structures.py"
+          ],
+          "incoming_count": 5,
+          "outgoing_count": 9,
+          "total_connections": 14
+        }
+      },
+      {
+        "file": "src/requests/_types.py",
+        "module_name": "requests._types",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 11,
+        "incoming_count": 7,
+        "outgoing_count": 4,
+        "severity": "medium",
+        "status": "possible_risk",
+        "reason": "This module has 11 dependency connections (7 incoming and 4 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/_types.py",
+          "incoming_dependencies": [
+            "src/requests/adapters.py",
+            "src/requests/api.py",
+            "src/requests/cookies.py",
+            "src/requests/hooks.py",
+            "src/requests/models.py",
+            "src/requests/sessions.py",
+            "src/requests/utils.py"
+          ],
+          "outgoing_dependencies": [
+            "src/requests/auth.py",
+            "src/requests/cookies.py",
+            "src/requests/models.py",
+            "src/requests/structures.py"
+          ],
+          "incoming_count": 7,
+          "outgoing_count": 4,
+          "total_connections": 11
+        }
+      },
+      {
+        "file": "src/requests/adapters.py",
+        "module_name": "requests.adapters",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 10,
+        "incoming_count": 2,
+        "outgoing_count": 8,
+        "severity": "medium",
+        "status": "possible_risk",
+        "reason": "This module has 10 dependency connections (2 incoming and 8 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/adapters.py",
+          "incoming_dependencies": [
+            "src/requests/models.py",
+            "src/requests/sessions.py"
+          ],
+          "outgoing_dependencies": [
+            "src/requests/_types.py",
+            "src/requests/auth.py",
+            "src/requests/compat.py",
+            "src/requests/cookies.py",
+            "src/requests/exceptions.py",
+            "src/requests/models.py",
+            "src/requests/structures.py",
+            "src/requests/utils.py"
+          ],
+          "incoming_count": 2,
+          "outgoing_count": 8,
+          "total_connections": 10
+        }
+      },
+      {
+        "file": "src/requests/compat.py",
+        "module_name": "requests.compat",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 10,
+        "incoming_count": 10,
+        "outgoing_count": 0,
+        "severity": "medium",
+        "status": "possible_risk",
+        "reason": "This module has 10 dependency connections (10 incoming and 0 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/compat.py",
+          "incoming_dependencies": [
+            "src/requests/_internal_utils.py",
+            "src/requests/adapters.py",
+            "src/requests/auth.py",
+            "src/requests/cookies.py",
+            "src/requests/exceptions.py",
+            "src/requests/models.py",
+            "src/requests/packages.py",
+            "src/requests/sessions.py",
+            "src/requests/structures.py",
+            "src/requests/utils.py"
+          ],
+          "outgoing_dependencies": [],
+          "incoming_count": 10,
+          "outgoing_count": 0,
+          "total_connections": 10
+        }
+      },
+      {
+        "file": "src/requests/cookies.py",
+        "module_name": "requests.cookies",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 10,
+        "incoming_count": 6,
+        "outgoing_count": 4,
+        "severity": "medium",
+        "status": "possible_risk",
+        "reason": "This module has 10 dependency connections (6 incoming and 4 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/cookies.py",
+          "incoming_dependencies": [
+            "src/requests/_types.py",
+            "src/requests/adapters.py",
+            "src/requests/auth.py",
+            "src/requests/models.py",
+            "src/requests/sessions.py",
+            "src/requests/utils.py"
+          ],
+          "outgoing_dependencies": [
+            "src/requests/_internal_utils.py",
+            "src/requests/_types.py",
+            "src/requests/compat.py",
+            "src/requests/models.py"
+          ],
+          "incoming_count": 6,
+          "outgoing_count": 4,
+          "total_connections": 10
+        }
+      },
+      {
+        "file": "src/requests/auth.py",
+        "module_name": "requests.auth",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 9,
+        "incoming_count": 4,
+        "outgoing_count": 5,
+        "severity": "medium",
+        "status": "possible_risk",
+        "reason": "This module has 9 dependency connections (4 incoming and 5 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/auth.py",
+          "incoming_dependencies": [
+            "src/requests/_types.py",
+            "src/requests/adapters.py",
+            "src/requests/models.py",
+            "src/requests/sessions.py"
+          ],
+          "outgoing_dependencies": [
+            "src/requests/_internal_utils.py",
+            "src/requests/compat.py",
+            "src/requests/cookies.py",
+            "src/requests/models.py",
+            "src/requests/utils.py"
+          ],
+          "incoming_count": 4,
+          "outgoing_count": 5,
+          "total_connections": 9
+        }
+      },
+      {
+        "file": "src/requests/__init__.py",
+        "module_name": "requests",
+        "signal": "high_connectivity",
+        "category": "architecture",
+        "connection_count": 8,
+        "incoming_count": 0,
+        "outgoing_count": 8,
+        "severity": "medium",
+        "status": "possible_risk",
+        "reason": "This module has 8 dependency connections (0 incoming and 8 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "evidence": {
+          "file": "src/requests/__init__.py",
+          "incoming_dependencies": [],
+          "outgoing_dependencies": [
+            "src/requests/__version__.py",
+            "src/requests/api.py",
+            "src/requests/exceptions.py",
+            "src/requests/models.py",
+            "src/requests/packages.py",
+            "src/requests/sessions.py",
+            "src/requests/status_codes.py",
+            "src/requests/utils.py"
+          ],
+          "incoming_count": 0,
+          "outgoing_count": 8,
+          "total_connections": 8
+        }
+      },
+      {
+        "category": "architecture",
+        "signal": "circular_dependency",
+        "status": "possible_risk",
+        "severity": "high",
+        "cycle": [
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/hooks.py",
+          "src/requests/models.py",
+          "src/requests/utils.py"
+        ],
+        "evidence": {
+          "nodes": [
+            "src/requests/_types.py",
+            "src/requests/adapters.py",
+            "src/requests/auth.py",
+            "src/requests/cookies.py",
+            "src/requests/exceptions.py",
+            "src/requests/hooks.py",
+            "src/requests/models.py",
+            "src/requests/utils.py"
+          ],
+          "edges": [
+            {
+              "source": "src/requests/_types.py",
+              "target": "src/requests/auth.py"
+            },
+            {
+              "source": "src/requests/_types.py",
+              "target": "src/requests/cookies.py"
+            },
+            {
+              "source": "src/requests/_types.py",
+              "target": "src/requests/models.py"
+            },
+            {
+              "source": "src/requests/adapters.py",
+              "target": "src/requests/_types.py"
+            },
+            {
+              "source": "src/requests/adapters.py",
+              "target": "src/requests/auth.py"
+            },
+            {
+              "source": "src/requests/adapters.py",
+              "target": "src/requests/cookies.py"
+            },
+            {
+              "source": "src/requests/adapters.py",
+              "target": "src/requests/exceptions.py"
+            },
+            {
+              "source": "src/requests/adapters.py",
+              "target": "src/requests/models.py"
+            },
+            {
+              "source": "src/requests/adapters.py",
+              "target": "src/requests/utils.py"
+            },
+            {
+              "source": "src/requests/auth.py",
+              "target": "src/requests/cookies.py"
+            },
+            {
+              "source": "src/requests/auth.py",
+              "target": "src/requests/models.py"
+            },
+            {
+              "source": "src/requests/auth.py",
+              "target": "src/requests/utils.py"
+            },
+            {
+              "source": "src/requests/cookies.py",
+              "target": "src/requests/_types.py"
+            },
+            {
+              "source": "src/requests/cookies.py",
+              "target": "src/requests/models.py"
+            },
+            {
+              "source": "src/requests/exceptions.py",
+              "target": "src/requests/models.py"
+            },
+            {
+              "source": "src/requests/hooks.py",
+              "target": "src/requests/_types.py"
+            },
+            {
+              "source": "src/requests/hooks.py",
+              "target": "src/requests/models.py"
+            },
+            {
+              "source": "src/requests/models.py",
+              "target": "src/requests/_types.py"
+            },
+            {
+              "source": "src/requests/models.py",
+              "target": "src/requests/adapters.py"
+            },
+            {
+              "source": "src/requests/models.py",
+              "target": "src/requests/auth.py"
+            },
+            {
+              "source": "src/requests/models.py",
+              "target": "src/requests/cookies.py"
+            },
+            {
+              "source": "src/requests/models.py",
+              "target": "src/requests/exceptions.py"
+            },
+            {
+              "source": "src/requests/models.py",
+              "target": "src/requests/hooks.py"
+            },
+            {
+              "source": "src/requests/models.py",
+              "target": "src/requests/utils.py"
+            },
+            {
+              "source": "src/requests/utils.py",
+              "target": "src/requests/_types.py"
+            },
+            {
+              "source": "src/requests/utils.py",
+              "target": "src/requests/cookies.py"
+            },
+            {
+              "source": "src/requests/utils.py",
+              "target": "src/requests/exceptions.py"
+            },
+            {
+              "source": "src/requests/utils.py",
+              "target": "src/requests/models.py"
+            }
+          ]
+        }
+      },
+      {
+        "category": "architecture",
+        "signal": "layer_violation",
+        "status": "possible_risk",
+        "source": "docs/conf.py",
+        "target": "src/requests/__init__.py",
+        "source_layer": "documentation",
+        "target_layer": "source",
+        "evidence": {
+          "source": "docs/conf.py",
+          "target": "src/requests/__init__.py",
+          "source_layer": "documentation",
+          "target_layer": "source"
+        },
+        "severity": "medium"
+      }
+    ],
+    "risk_signal_count": 11
+  },
+  "risk_signals": [
+    {
+      "file": "src/requests/models.py",
+      "module_name": "requests.models",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 21,
+      "incoming_count": 10,
+      "outgoing_count": 11,
+      "severity": "high",
+      "status": "possible_risk",
+      "reason": "This module has 21 dependency connections (10 incoming and 11 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/models.py",
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/api.py",
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/hooks.py",
+          "src/requests/sessions.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/hooks.py",
+          "src/requests/status_codes.py",
+          "src/requests/structures.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_count": 10,
+        "outgoing_count": 11,
+        "total_connections": 21
+      }
+    },
+    {
+      "file": "src/requests/sessions.py",
+      "module_name": "requests.sessions",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 14,
+      "incoming_count": 2,
+      "outgoing_count": 12,
+      "severity": "medium",
+      "status": "possible_risk",
+      "reason": "This module has 14 dependency connections (2 incoming and 12 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/sessions.py",
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/api.py"
+        ],
+        "outgoing_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/hooks.py",
+          "src/requests/models.py",
+          "src/requests/status_codes.py",
+          "src/requests/structures.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_count": 2,
+        "outgoing_count": 12,
+        "total_connections": 14
+      }
+    },
+    {
+      "file": "src/requests/utils.py",
+      "module_name": "requests.utils",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 14,
+      "incoming_count": 5,
+      "outgoing_count": 9,
+      "severity": "medium",
+      "status": "possible_risk",
+      "reason": "This module has 14 dependency connections (5 incoming and 9 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/utils.py",
+        "incoming_dependencies": [
+          "src/requests/__init__.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "outgoing_dependencies": [
+          "src/requests/__version__.py",
+          "src/requests/_internal_utils.py",
+          "src/requests/_types.py",
+          "src/requests/certs.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/models.py",
+          "src/requests/structures.py"
+        ],
+        "incoming_count": 5,
+        "outgoing_count": 9,
+        "total_connections": 14
+      }
+    },
+    {
+      "file": "src/requests/_types.py",
+      "module_name": "requests._types",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 11,
+      "incoming_count": 7,
+      "outgoing_count": 4,
+      "severity": "medium",
+      "status": "possible_risk",
+      "reason": "This module has 11 dependency connections (7 incoming and 4 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/_types.py",
+        "incoming_dependencies": [
+          "src/requests/adapters.py",
+          "src/requests/api.py",
+          "src/requests/cookies.py",
+          "src/requests/hooks.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_dependencies": [
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/models.py",
+          "src/requests/structures.py"
+        ],
+        "incoming_count": 7,
+        "outgoing_count": 4,
+        "total_connections": 11
+      }
+    },
+    {
+      "file": "src/requests/adapters.py",
+      "module_name": "requests.adapters",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 10,
+      "incoming_count": 2,
+      "outgoing_count": 8,
+      "severity": "medium",
+      "status": "possible_risk",
+      "reason": "This module has 10 dependency connections (2 incoming and 8 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/adapters.py",
+        "incoming_dependencies": [
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "outgoing_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/auth.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/models.py",
+          "src/requests/structures.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_count": 2,
+        "outgoing_count": 8,
+        "total_connections": 10
+      }
+    },
+    {
+      "file": "src/requests/compat.py",
+      "module_name": "requests.compat",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 10,
+      "incoming_count": 10,
+      "outgoing_count": 0,
+      "severity": "medium",
+      "status": "possible_risk",
+      "reason": "This module has 10 dependency connections (10 incoming and 0 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/compat.py",
+        "incoming_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/models.py",
+          "src/requests/packages.py",
+          "src/requests/sessions.py",
+          "src/requests/structures.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_dependencies": [],
+        "incoming_count": 10,
+        "outgoing_count": 0,
+        "total_connections": 10
+      }
+    },
+    {
+      "file": "src/requests/cookies.py",
+      "module_name": "requests.cookies",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 10,
+      "incoming_count": 6,
+      "outgoing_count": 4,
+      "severity": "medium",
+      "status": "possible_risk",
+      "reason": "This module has 10 dependency connections (6 incoming and 4 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/cookies.py",
+        "incoming_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py",
+          "src/requests/utils.py"
+        ],
+        "outgoing_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/_types.py",
+          "src/requests/compat.py",
+          "src/requests/models.py"
+        ],
+        "incoming_count": 6,
+        "outgoing_count": 4,
+        "total_connections": 10
+      }
+    },
+    {
+      "file": "src/requests/auth.py",
+      "module_name": "requests.auth",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 9,
+      "incoming_count": 4,
+      "outgoing_count": 5,
+      "severity": "medium",
+      "status": "possible_risk",
+      "reason": "This module has 9 dependency connections (4 incoming and 5 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/auth.py",
+        "incoming_dependencies": [
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/models.py",
+          "src/requests/sessions.py"
+        ],
+        "outgoing_dependencies": [
+          "src/requests/_internal_utils.py",
+          "src/requests/compat.py",
+          "src/requests/cookies.py",
+          "src/requests/models.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_count": 4,
+        "outgoing_count": 5,
+        "total_connections": 9
+      }
+    },
+    {
+      "file": "src/requests/__init__.py",
+      "module_name": "requests",
+      "signal": "high_connectivity",
+      "category": "architecture",
+      "connection_count": 8,
+      "incoming_count": 0,
+      "outgoing_count": 8,
+      "severity": "medium",
+      "status": "possible_risk",
+      "reason": "This module has 8 dependency connections (0 incoming and 8 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+      "evidence": {
+        "file": "src/requests/__init__.py",
+        "incoming_dependencies": [],
+        "outgoing_dependencies": [
+          "src/requests/__version__.py",
+          "src/requests/api.py",
+          "src/requests/exceptions.py",
+          "src/requests/models.py",
+          "src/requests/packages.py",
+          "src/requests/sessions.py",
+          "src/requests/status_codes.py",
+          "src/requests/utils.py"
+        ],
+        "incoming_count": 0,
+        "outgoing_count": 8,
+        "total_connections": 8
+      }
+    },
+    {
+      "category": "architecture",
+      "signal": "circular_dependency",
+      "status": "possible_risk",
+      "severity": "high",
+      "cycle": [
+        "src/requests/_types.py",
+        "src/requests/adapters.py",
+        "src/requests/auth.py",
+        "src/requests/cookies.py",
+        "src/requests/exceptions.py",
+        "src/requests/hooks.py",
+        "src/requests/models.py",
+        "src/requests/utils.py"
+      ],
+      "evidence": {
+        "nodes": [
+          "src/requests/_types.py",
+          "src/requests/adapters.py",
+          "src/requests/auth.py",
+          "src/requests/cookies.py",
+          "src/requests/exceptions.py",
+          "src/requests/hooks.py",
+          "src/requests/models.py",
+          "src/requests/utils.py"
+        ],
+        "edges": [
+          {
+            "source": "src/requests/_types.py",
+            "target": "src/requests/auth.py"
+          },
+          {
+            "source": "src/requests/_types.py",
+            "target": "src/requests/cookies.py"
+          },
+          {
+            "source": "src/requests/_types.py",
+            "target": "src/requests/models.py"
+          },
+          {
+            "source": "src/requests/adapters.py",
+            "target": "src/requests/_types.py"
+          },
+          {
+            "source": "src/requests/adapters.py",
+            "target": "src/requests/auth.py"
+          },
+          {
+            "source": "src/requests/adapters.py",
+            "target": "src/requests/cookies.py"
+          },
+          {
+            "source": "src/requests/adapters.py",
+            "target": "src/requests/exceptions.py"
+          },
+          {
+            "source": "src/requests/adapters.py",
+            "target": "src/requests/models.py"
+          },
+          {
+            "source": "src/requests/adapters.py",
+            "target": "src/requests/utils.py"
+          },
+          {
+            "source": "src/requests/auth.py",
+            "target": "src/requests/cookies.py"
+          },
+          {
+            "source": "src/requests/auth.py",
+            "target": "src/requests/models.py"
+          },
+          {
+            "source": "src/requests/auth.py",
+            "target": "src/requests/utils.py"
+          },
+          {
+            "source": "src/requests/cookies.py",
+            "target": "src/requests/_types.py"
+          },
+          {
+            "source": "src/requests/cookies.py",
+            "target": "src/requests/models.py"
+          },
+          {
+            "source": "src/requests/exceptions.py",
+            "target": "src/requests/models.py"
+          },
+          {
+            "source": "src/requests/hooks.py",
+            "target": "src/requests/_types.py"
+          },
+          {
+            "source": "src/requests/hooks.py",
+            "target": "src/requests/models.py"
+          },
+          {
+            "source": "src/requests/models.py",
+            "target": "src/requests/_types.py"
+          },
+          {
+            "source": "src/requests/models.py",
+            "target": "src/requests/adapters.py"
+          },
+          {
+            "source": "src/requests/models.py",
+            "target": "src/requests/auth.py"
+          },
+          {
+            "source": "src/requests/models.py",
+            "target": "src/requests/cookies.py"
+          },
+          {
+            "source": "src/requests/models.py",
+            "target": "src/requests/exceptions.py"
+          },
+          {
+            "source": "src/requests/models.py",
+            "target": "src/requests/hooks.py"
+          },
+          {
+            "source": "src/requests/models.py",
+            "target": "src/requests/utils.py"
+          },
+          {
+            "source": "src/requests/utils.py",
+            "target": "src/requests/_types.py"
+          },
+          {
+            "source": "src/requests/utils.py",
+            "target": "src/requests/cookies.py"
+          },
+          {
+            "source": "src/requests/utils.py",
+            "target": "src/requests/exceptions.py"
+          },
+          {
+            "source": "src/requests/utils.py",
+            "target": "src/requests/models.py"
+          }
+        ]
+      }
+    },
+    {
+      "category": "architecture",
+      "signal": "layer_violation",
+      "status": "possible_risk",
+      "source": "docs/conf.py",
+      "target": "src/requests/__init__.py",
+      "source_layer": "documentation",
+      "target_layer": "source",
+      "evidence": {
+        "source": "docs/conf.py",
+        "target": "src/requests/__init__.py",
+        "source_layer": "documentation",
+        "target_layer": "source"
+      },
+      "severity": "medium"
+    }
+  ],
+  "risk_intelligence": {
+    "risk_signal_count": 11,
+    "claim_count": 11,
+    "claims": [
+      {
+        "text": "requests.models has 21 dependency connections. This module has 21 dependency connections (10 incoming and 11 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "high",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/models.py",
+            "module_name": "requests.models",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "requests.sessions has 14 dependency connections. This module has 14 dependency connections (2 incoming and 12 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/sessions.py",
+            "module_name": "requests.sessions",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "requests.utils has 14 dependency connections. This module has 14 dependency connections (5 incoming and 9 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/utils.py",
+            "module_name": "requests.utils",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "requests._types has 11 dependency connections. This module has 11 dependency connections (7 incoming and 4 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/_types.py",
+            "module_name": "requests._types",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "requests.adapters has 10 dependency connections. This module has 10 dependency connections (2 incoming and 8 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/adapters.py",
+            "module_name": "requests.adapters",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "requests.compat has 10 dependency connections. This module has 10 dependency connections (10 incoming and 0 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/compat.py",
+            "module_name": "requests.compat",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "requests.cookies has 10 dependency connections. This module has 10 dependency connections (6 incoming and 4 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/cookies.py",
+            "module_name": "requests.cookies",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "requests.auth has 9 dependency connections. This module has 9 dependency connections (4 incoming and 5 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/auth.py",
+            "module_name": "requests.auth",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "requests has 8 dependency connections. This module has 8 dependency connections (0 incoming and 8 outgoing). High connectivity may indicate that the module is highly coupled with other production modules.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "src/requests/__init__.py",
+            "module_name": "requests",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      },
+      {
+        "text": "Circular dependency detected across 8 production modules: src/requests/_types.py, src/requests/adapters.py, src/requests/auth.py, src/requests/cookies.py, src/requests/exceptions.py, src/requests/hooks.py, src/requests/models.py, src/requests/utils.py.",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "high",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": null,
+            "module_name": null,
+            "start_line": null,
+            "end_line": null,
+            "nodes": [
+              "src/requests/_types.py",
+              "src/requests/adapters.py",
+              "src/requests/auth.py",
+              "src/requests/cookies.py",
+              "src/requests/exceptions.py",
+              "src/requests/hooks.py",
+              "src/requests/models.py",
+              "src/requests/utils.py"
+            ],
+            "edges": [
+              {
+                "source": "src/requests/_types.py",
+                "target": "src/requests/auth.py"
+              },
+              {
+                "source": "src/requests/_types.py",
+                "target": "src/requests/cookies.py"
+              },
+              {
+                "source": "src/requests/_types.py",
+                "target": "src/requests/models.py"
+              },
+              {
+                "source": "src/requests/adapters.py",
+                "target": "src/requests/_types.py"
+              },
+              {
+                "source": "src/requests/adapters.py",
+                "target": "src/requests/auth.py"
+              },
+              {
+                "source": "src/requests/adapters.py",
+                "target": "src/requests/cookies.py"
+              },
+              {
+                "source": "src/requests/adapters.py",
+                "target": "src/requests/exceptions.py"
+              },
+              {
+                "source": "src/requests/adapters.py",
+                "target": "src/requests/models.py"
+              },
+              {
+                "source": "src/requests/adapters.py",
+                "target": "src/requests/utils.py"
+              },
+              {
+                "source": "src/requests/auth.py",
+                "target": "src/requests/cookies.py"
+              },
+              {
+                "source": "src/requests/auth.py",
+                "target": "src/requests/models.py"
+              },
+              {
+                "source": "src/requests/auth.py",
+                "target": "src/requests/utils.py"
+              },
+              {
+                "source": "src/requests/cookies.py",
+                "target": "src/requests/_types.py"
+              },
+              {
+                "source": "src/requests/cookies.py",
+                "target": "src/requests/models.py"
+              },
+              {
+                "source": "src/requests/exceptions.py",
+                "target": "src/requests/models.py"
+              },
+              {
+                "source": "src/requests/hooks.py",
+                "target": "src/requests/_types.py"
+              },
+              {
+                "source": "src/requests/hooks.py",
+                "target": "src/requests/models.py"
+              },
+              {
+                "source": "src/requests/models.py",
+                "target": "src/requests/_types.py"
+              },
+              {
+                "source": "src/requests/models.py",
+                "target": "src/requests/adapters.py"
+              },
+              {
+                "source": "src/requests/models.py",
+                "target": "src/requests/auth.py"
+              },
+              {
+                "source": "src/requests/models.py",
+                "target": "src/requests/cookies.py"
+              },
+              {
+                "source": "src/requests/models.py",
+                "target": "src/requests/exceptions.py"
+              },
+              {
+                "source": "src/requests/models.py",
+                "target": "src/requests/hooks.py"
+              },
+              {
+                "source": "src/requests/models.py",
+                "target": "src/requests/utils.py"
+              },
+              {
+                "source": "src/requests/utils.py",
+                "target": "src/requests/_types.py"
+              },
+              {
+                "source": "src/requests/utils.py",
+                "target": "src/requests/cookies.py"
+              },
+              {
+                "source": "src/requests/utils.py",
+                "target": "src/requests/exceptions.py"
+              },
+              {
+                "source": "src/requests/utils.py",
+                "target": "src/requests/models.py"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Architecture layer violation detected: docs/conf.py (documentation) depends on src/requests/__init__.py (source).",
+        "status": "possible_risk",
+        "category": "architecture",
+        "severity": "medium",
+        "evidence": [
+          {
+            "evidence_type": "architecture",
+            "file": "docs/conf.py",
+            "module_name": "docs/conf.py",
+            "target": "src/requests/__init__.py",
+            "source_layer": "documentation",
+            "target_layer": "source",
+            "start_line": null,
+            "end_line": null
+          }
+        ]
+      }
+    ],
+    "coverage": {
+      "claim_count": 11,
+      "supported_claims": 11,
+      "unsupported_claims": 0,
+      "coverage": 1.0
+    }
+  }
+}
